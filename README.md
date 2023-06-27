@@ -1,6 +1,6 @@
 # API Testing using JavaScript
 
-Sample project with a simple structure to showcase how to write easy to use and maintanable API Testin Suite using JavaScript
+Sample project with a simple structure to showcase how to write an easy to use and maintanable API Testing Suite using JavaScript
 
 ## Structure
 
