@@ -1,11 +1,10 @@
-const axios = require('axios');
+const service = require('../src/services/pokemon-service');
 const { expect } = require('chai');
 
 describe('Pokemon Tests', () => {
   it('Get all Pokemons', async () => {
-    await axios
-      .get('https://pokeapi.co/api/v2/pokemon')
-      .then(response => expect(response.data.results).is.not.empty)
-      .catch(error => console.error(error.message));
+    await service
+      .getAll()
+      .then(response => expect(response.data.results).to.not.be.empty);
   });
 });
