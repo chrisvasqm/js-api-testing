@@ -14,4 +14,4 @@ At a high level, the following layers are being used: `Client` > `Service` > `Te
 
 > Note: In this case we are using Mocha for the test framework and Chai for the assertions in the `Test` layer, but these can be replaced if needed.
 
-The following layers should help decoupling the code with minimal impact to be able to replace any parts of the code while helping the readers map the features and endpoints that we are trying to test easier.
+The following layers should help decoupling the code with minimal impact to be able to replace any parts of the code while helping the readers map the features and endpoints that we are trying to test easier since the `Test` doesn't know anything about calling endpoints, the `Service` doesn't know anything about calling Web APIs, and ultimately the `Client` setups general configurations to be used across the board.
