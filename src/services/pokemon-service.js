@@ -1,12 +1,13 @@
 const apiClient = require('./api-client');
 
+const ENDPOINT = '/pokemon';
 class PokemonService {
   async getAll() {
-    return await apiClient.get('/api/v2/pokemon');
+    return await apiClient.get(`${ENDPOINT}`);
   }
 
   async find(id) {
-    return await apiClient.get(`/api/v2/pokemon/${id}`);
+    return await apiClient.get(`${ENDPOINT}/${id}`);
   }
 }
 
