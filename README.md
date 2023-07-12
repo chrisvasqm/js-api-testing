@@ -18,7 +18,7 @@ And then:
 npm test
 ```
 
-> This will execute all test files
+> This will execute all the Mocha tests under the `/test` directory.
 
 ## Structure
 
