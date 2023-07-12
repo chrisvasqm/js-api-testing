@@ -2,6 +2,24 @@
 
 Sample project with a simple structure to showcase how to write an easy to use and maintanable API Testing Suite using JavaScript
 
+## Getting started
+
+In order to execute these tests, run the following commands on your Terminal:
+
+```bash
+npm install
+```
+
+> Requires NodeJS to be installed. Installs all the dependncies in your local machine.
+
+And then:
+
+```bash
+npm test
+```
+
+> This will execute all test files
+
 ## Structure
 
 At a high level, the following layers are being used: `Client` > `Service` > `Test`.
