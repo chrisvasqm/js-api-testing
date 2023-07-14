@@ -1,9 +1,9 @@
 const { expect } = require('chai');
-const countriesService = require('../src/services/countries-service');
+const service = require('../src/services/countries-service');
 
 describe('Countries Test', async () => {
   it("Get a country's name, currency and phones", async () => {
-    const response = await countriesService.find('DO');
+    const response = await service.find('DO');
 
     expect(response.country.name).to.equal('Dominican Republic');
     expect(response.country.currency).to.equal('DOP');

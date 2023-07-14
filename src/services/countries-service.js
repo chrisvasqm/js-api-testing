@@ -1,8 +1,9 @@
-const { request, gql } = require('graphql-request');
+const { gql, GraphQLClient } = require('graphql-request');
+const client = new GraphQLClient('https://countries.trevorblades.com/');
 
 class Countries {
   async find(code) {
-    const document = gql`
+    const query = gql`
       query {
         country(code: \"${code}\") {
           name
@@ -12,7 +13,7 @@ class Countries {
       }
     `;
 
-    return await request('https://countries.trevorblades.com/', document);
+    return await client.request(query);
   }
 }
 
