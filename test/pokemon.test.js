@@ -1,5 +1,6 @@
 const { expect } = require('chai');
-const service = require('../src/services/pokemon-service');
+const PokemonService = require('../src/services/pokemon-service');
+const service = new PokemonService();
 
 describe('Pokemon Tests', () => {
   it('Get all Pokemons', async () => {

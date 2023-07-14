@@ -10,4 +10,4 @@ class PokemonService {
   }
 }
 
-module.exports = new PokemonService();
+module.exports = PokemonService;
