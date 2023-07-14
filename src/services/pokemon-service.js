@@ -1,12 +1,12 @@
-const apiClient = require('./api-client');
+const client = require('./rest-client');
 
 class PokemonService {
   async getAll() {
-    return await apiClient.get(`/pokemon`);
+    return await client.get(`/pokemon`);
   }
 
   async find(id) {
-    return await apiClient.get(`/pokemon/${id}`);
+    return await client.get(`/pokemon/${id}`);
   }
 }
 
