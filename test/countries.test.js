@@ -1,8 +1,8 @@
 const { expect } = require('chai');
 const service = require('../src/services/countries-service');
 
-describe('Countries Test', async () => {
-  it("Get a country's name, currency and phones", async () => {
+describe('GraphQL API: Countries', async () => {
+  it("should return the name, currency and phones by the country's code", async () => {
     const response = await service.find('DO');
 
     expect(response.country.name).to.equal('Dominican Republic');
