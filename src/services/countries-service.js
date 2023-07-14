@@ -17,4 +17,4 @@ class Countries {
   }
 }
 
-module.exports = new Countries();
+module.exports = Countries;

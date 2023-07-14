@@ -1,5 +1,6 @@
 const { expect } = require('chai');
-const service = require('../src/services/countries-service');
+const CountriesService = require('../src/services/countries-service');
+const service = new CountriesService();
 
 describe('GraphQL API: Countries', async () => {
   it("should return the name, currency and phones by the country's code", async () => {
