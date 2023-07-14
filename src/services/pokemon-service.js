@@ -1,4 +1,4 @@
-const client = require('./rest-client');
+const client = require('../clients/rest-client');
 
 class PokemonService {
   async getAll() {
